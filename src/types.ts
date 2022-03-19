@@ -18,6 +18,7 @@ export type RepositoryContext = ContextFactory<"repository">;
 export type AutoMergerContext = ContextFactory<
   "issue_comment" | "pull_request_review" | "status"
 >;
+
 export type PullsGetResponseData =
   RestEndpointMethodTypes["pulls"]["get"]["response"]["data"];
 export type PullsListResponseData =
@@ -26,6 +27,7 @@ export type UsersGetByUsernameResponseData =
   RestEndpointMethodTypes["users"]["getByUsername"]["response"]["data"];
 export type ReposListCommitStatusesForRefResponseData =
   RestEndpointMethodTypes["repos"]["listCommitStatusesForRef"]["response"]["data"];
+// export type OrgsMembershipForUserResponse
 export type PayloadRepository = Repository;
 export type ProbotOctokit = Context["octokit"];
 
